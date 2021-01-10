@@ -7,6 +7,7 @@ Using Small base images and Builder pattern
 ###### SMALL BASE IMAGES
  - Using small images for application
  - Using small base image for server
+
 example: for a node app, going from standard `node:8` to `node:8-alpine` reduces image size by almost 10 times
 
 ```
@@ -21,6 +22,7 @@ CMD npm start
 
 ###### BUILDER PATTERN
  - Deploying only compiled code
+
 example: for a go app, copy only compiled program to container's WORKDIR
 
 ```
